@@ -252,7 +252,7 @@ const SettingsModal: FC<SettingsModalProps> = ({ isOpen, onOpenChange }) => {
 									isIconOnly
 									onPress={() =>
 										openLink(
-											"https://github.com/CoffeSiberian/truck-tools/blob/main/src/translations/README.md"
+											"https://github.com/youtsuhodev/truck-tools/blob/main/src/translations/README.md"
 										)
 									}
 								>

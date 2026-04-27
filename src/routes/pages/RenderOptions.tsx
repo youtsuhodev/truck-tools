@@ -176,7 +176,7 @@ const RenderOptions = () => {
 							size="sm"
 							startContent={<IconBrandGithub />}
 							onPress={() =>
-								open("https://github.com/CoffeSiberian/truck-tools")
+								open("https://github.com/youtsuhodev/truck-tools")
 							}
 						>
 							Star on GitHub ❤️

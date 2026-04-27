@@ -19,11 +19,7 @@ import {
 } from "@heroui/modal";
 
 // Icons
-import {
-	IconBrandGithub,
-	IconBrandTwitch,
-	IconBriefcase,
-} from "@tabler/icons-react";
+import { IconBrandGithub } from "@tabler/icons-react";
 
 interface AboutModalProps {
 	isOpen: boolean;
@@ -51,19 +47,27 @@ const AboutModal: FC<AboutModalProps> = ({ isOpen, onOpenChange }) => {
 						<Divider />
 						<ModalBody className="flex items-center justify-center py-1">
 							<p>{about.description}</p>
-							<div className="mt-2 flex flex-row items-center gap-2">
-								<Avatar
-									src="https://avatars.githubusercontent.com/u/61036343?v=4"
-									size="lg"
-									name="Fernando Garrido"
-									alt="Fernando Garrido"
-								></Avatar>
-								<div>
-									<div className="flex justify-center">
-										<h4 className="text-large font-bold">Fernando Garrido</h4>
+							<div className="mt-2 flex flex-col items-center gap-4">
+								<div className="flex flex-row items-center gap-2">
+									<Avatar
+										src="https://avatars.githubusercontent.com/u/61036343?v=4"
+										size="lg"
+										name="Fernando Garrido"
+										alt="Fernando Garrido"
+									></Avatar>
+									<div>
+										<div className="flex justify-center">
+											<h4 className="text-large font-bold">Fernando Garrido</h4>
+										</div>
+										<small className="text-default-500">
+											Original Developer - CoffeSiberian
+										</small>
 									</div>
-									<small className="text-default-500">
-										SiberianCoffe - Full Stack Developer
+								</div>
+								<Divider />
+								<div className="text-center">
+									<small className="text-default-400">
+										This version is a fork maintained by youtsuhodev
 									</small>
 								</div>
 							</div>
@@ -71,30 +75,23 @@ const AboutModal: FC<AboutModalProps> = ({ isOpen, onOpenChange }) => {
 						<ModalFooter className="flex flex-col items-center justify-center">
 							<div className="flex gap-1">
 								<Button
-									onPress={() => open("https://github.com/CoffeSiberian")}
-									variant="light"
-									aria-label="github-link"
+									onPress={() => open("https://github.com/youtsuhodev/truck-tools")}
+									variant="solid"
+									color="primary"
+									aria-label="github-link-fork"
 								>
 									<IconBrandGithub size={30} />
-									<p className="font-bold">CoffeSiberian</p>
-								</Button>
-								<Button
-									onPress={() => open("https://www.twitch.tv/siberiancoffe")}
-									variant="light"
-									aria-label="github-link"
-								>
-									<IconBrandTwitch size={30} />
-									<p className="font-bold">siberiancoffe</p>
+									<p className="font-bold">youtsuhodev (Fork)</p>
 								</Button>
 							</div>
 							<div className="flex gap-1">
 								<Button
-									onPress={() => open("https://siberiancoffe.dev")}
+									onPress={() => open("https://github.com/CoffeSiberian/truck-tools")}
 									variant="light"
-									aria-label="github-link"
+									aria-label="github-link-original"
 								>
-									<IconBriefcase size={30} />
-									<p className="font-bold">siberiancoffe.dev</p>
+									<IconBrandGithub size={30} />
+									<p className="font-bold">Original: CoffeSiberian</p>
 								</Button>
 							</div>
 						</ModalFooter>

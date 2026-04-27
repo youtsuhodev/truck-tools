@@ -1,11 +1,24 @@
 # Truck Tools
 
+> [!NOTE]
+> This is a fork of the original [Truck Tools](https://github.com/CoffeSiberian/truck-tools) by [CoffeSiberian](https://github.com/CoffeSiberian). This version is maintained by [youtsuhodev](https://github.com/youtsuhodev).
+
 > [!WARNING]
 > This application is not yet completely ready so it could have bugs and problems. This is why the updates arrive as a pre-release.
 
+## License & Modifications
+
+This project is licensed under the GNU General Public License (GPL). As required by the GPL:
+
+- **Source code**: Available at [https://github.com/youtsuhodev/truck-tools](https://github.com/youtsuhodev/truck-tools)
+- **Original project**: Based on [https://github.com/CoffeSiberian/truck-tools](https://github.com/CoffeSiberian/truck-tools)
+- **Modifications**: This fork may include modifications, bug fixes, and additional features
+- **Same rights**: This project maintains the same GPL license, giving you the freedom to modify and redistribute
+- **License file**: Included in this repository (LICENSE)
+
 ## Download
 
-To download and install the application you will first need to download the latest version at the following link <https://github.com/CoffeSiberian/truck-tools/releases/latest>
+To download and install the application you will first need to download the latest version at the following link <https://github.com/youtsuhodev/truck-tools/releases/latest>
 
 > [!CAUTION]
 > Do not download this application through third party sites. Use only this repository to download the application so that you avoid at all costs any malicious file.
@@ -118,7 +131,7 @@ Remember, contributing translations makes you a collaborator of the project!
 
 #### DecryptTruck
 
-To decrypt the .sii files, we used as a basis the code from https://github.com/CoffeSiberian/DecryptTruck
+To decrypt the .sii files, we used as a basis the code from https://github.com/CoffeSiberian/DecryptTruck (original project)
 
 #### SII_Decrypt
 
